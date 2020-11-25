@@ -25,10 +25,22 @@ html {
   nav {
       background-color: var(--dark-color);
       width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  nav ul {
+      display: flex;
+      list-style-type: none;
+      /*
+      width: 40%;
+      justify-content: space-between;
+      */
+      margin: 20px;
+      padding: 0;
   }
 
   nav * {
-    display: inline-block;
     color: #edf0f1;
   }
 
@@ -38,26 +50,27 @@ html {
   }
 
   .logo {
-      margin-left: 10px;
+      margin: 20px;
       cursor: pointer;
   }
 
   .jumbotron {
       width: 100%;
       height: 400px;
-      background-image: url(man-in-red-shirt.jpg);
+      background-image: url(videochat.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       min-height: 100%;
       text-align: center;
-      /*position: relative; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
   }
   
   .jumbo-text {
       background-color: var(--dark-color);
       opacity: 0.9;
-      position: absolute;
-      top: 150px;
       width: 100%;
     }
     
@@ -73,9 +86,36 @@ html {
         height: 50px;
     }
 
+    #features {
+        background-color: var(--light-color);
+        color: #666666;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features-sub {
+        margin: 50px 10% 0 10%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #features h2 {
+        width: 100%;
+    }
+
+    #features p {
+        max-width: 500px;
+    }
+
+    #features img {
+        max-width: 40%;
+    }
+
     #price {
         background-color: var(--dark-color);
         color: #ddd;
+        display: flex;
+        justify-content: space-around;
     }
 
     .card {
